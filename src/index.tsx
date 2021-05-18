@@ -1,9 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 ReactDOM.render(
-  <div className="h-full flex items-center justify-center">
-    <p className="text-red-500 text-8xl">Hello React</p>
+  <div className="flex items-center justify-center h-full">
+    <p className="text-8xl text-red-500">Hello React</p>
   </div>,
-  document.getElementById("app")
+  document.getElementById('app')
 );

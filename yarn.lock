@@ -1770,6 +1770,18 @@ postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.15:
     nanoid "^3.1.23"
     source-map "^0.6.1"
 
+prettier-plugin-tailwind-css@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwind-css/-/prettier-plugin-tailwind-css-1.5.0.tgz#ec8faa7e671f92900a548c18b708838c445ace9c"
+  integrity sha512-LUbINk8O0l+r7iPO6fUOQtoZdF7lQ0SGZTrlAl6IjW8zc5URMGqdW2QVoIK2de2HQeKvb9X2xv8aUzf+v2UVYw==
+  dependencies:
+    prettier "^2.0.5"
+
+prettier@^2.0.5, prettier@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.0.tgz#b6a5bf1284026ae640f17f7ff5658a7567fc0d18"
+  integrity sha512-kXtO4s0Lz/DW/IJ9QdWhAf7/NmPWQXkFr/r/WkR3vyI+0v8amTDxiaQSLzs8NBlytfLWX/7uQUMIW677yLKl4w==
+
 pretty-hrtime@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
