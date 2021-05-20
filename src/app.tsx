@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 const App: React.FC = () => (
   <Router>
     <Switch>
-      <Route path="/">
+      <Route path="/" exact>
         <p>Home page</p>
       </Route>
       <Route path="*">
