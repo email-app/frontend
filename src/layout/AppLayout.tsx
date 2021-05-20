@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import EmailList from '../components/EmailList';
 import MobileHeader from '../components/MobileHeader';
 import Navbar from '../components/Navbar';
 import Slideover from '../components/Slideover';
@@ -31,11 +32,7 @@ const AppLayout: React.FC = ({ children }) => {
             {children}
           </main>
           <aside className="xl:order-first xl:flex xl:flex-col w-96 relative flex-shrink-0 hidden border-r border-gray-200">
-            {/* Start secondary column (hidden on smaller screens) */}
-            <div className="sm:px-6 lg:px-8 absolute inset-0 px-4 py-6">
-              <div className="h-full border-2 border-gray-200 border-dashed rounded-lg" />
-            </div>
-            {/* End secondary column */}
+            <EmailList />
           </aside>
         </div>
       </div>
