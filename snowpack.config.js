@@ -3,7 +3,7 @@ module.exports = {
   mount: {
     /* ... */
   },
-  plugins: [],
+  plugins: ['@snowpack/plugin-postcss'],
   routes: [
     /* Enable an SPA Fallback in development: */
     { match: 'routes', src: '.*', dest: '/index.html' },
