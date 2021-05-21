@@ -6,7 +6,11 @@ module.exports = {
   mount: {
     /* ... */
   },
-  plugins: ['@snowpack/plugin-postcss', '@snowpack/plugin-react-refresh'],
+  plugins: [
+    '@snowpack/plugin-postcss',
+    '@snowpack/plugin-react-refresh',
+    'snowpack-plugin-raw-file-loader',
+  ],
   routes: [
     /* Enable an SPA Fallback in development: */
     { match: 'routes', src: '.*', dest: '/index.html' },

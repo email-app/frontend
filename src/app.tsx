@@ -9,7 +9,7 @@ const App: React.FC = () => (
     <AppLayout>
       <Switch>
         <Route path="/" exact>
-          <div>
+          <div className="max-w-3xl mx-auto">
             <EmailView />
           </div>
         </Route>

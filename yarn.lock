@@ -2420,6 +2420,11 @@ smart-buffer@^4.1.0:
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.1.0.tgz#91605c25d91652f4661ea69ccf45f1b331ca21ba"
   integrity sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw==
 
+snowpack-plugin-raw-file-loader@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/snowpack-plugin-raw-file-loader/-/snowpack-plugin-raw-file-loader-1.0.9.tgz#072d4c203fd8bc9bece74ef1db7256a1e5b1fc15"
+  integrity sha512-GY7MuommuHfUo7ZfPu/yeyZ7oY7vybTcIc/1JBkg3IwLDNKckprIuhPp8XAvO3gZdCTucDIw6iL2dVEId3GhJw==
+
 snowpack@^3.0.1:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-3.4.0.tgz#649b0ae009e241401ee8b8d0a174d29a608998c9"

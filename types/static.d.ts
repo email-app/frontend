@@ -52,3 +52,9 @@ declare module '*.png' {
   const ref: string;
   export default ref;
 }
+
+/* HTML files */
+declare module '*.txt' {
+  const ref: string;
+  export default ref;
+}
