@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuIcon } from '@heroicons/react/outline';
 
-interface MobileHeaderProps {
+export interface MobileHeaderProps {
   onToggleMenu: () => void;
 }
 const MobileHeader: React.FC<MobileHeaderProps> = ({ onToggleMenu }) => (
