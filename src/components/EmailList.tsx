@@ -8,7 +8,7 @@ const messages = [
     id: 1,
     subject: 'Velit placeat sit ducimus non sed',
     sender: 'Gloria Roberston',
-    href: '#',
+    read: false,
     date: '1d ago',
     datetime: '2021-01-27T16:35',
     preview:
@@ -19,7 +19,7 @@ const messages = [
     subject:
       'Nemo mollitia repudiandae adipisci explicabo optio consequatur tempora ut nihil',
     sender: 'Virginia Abshire',
-    href: '#',
+    read: true,
     date: '1d ago',
     datetime: '2021-01-27T16:35',
     preview:
@@ -30,7 +30,7 @@ const messages = [
     subject:
       'Doloremque reprehenderit et harum quas explicabo nulla architecto dicta voluptatibus',
     sender: 'Kyle Gulgowski',
-    href: '#',
+    read: false,
     date: '1d ago',
     datetime: '2021-01-27T16:35',
     preview:
@@ -40,7 +40,7 @@ const messages = [
     id: 4,
     subject: 'Eos sequi et aut ex impedit',
     sender: 'Hattie Haag',
-    href: '#',
+    read: false,
     date: '1d ago',
     datetime: '2021-01-27T16:35',
     preview:
@@ -50,7 +50,7 @@ const messages = [
     id: 5,
     subject: 'Quisquam veniam explicabo',
     sender: 'Wilma Glover',
-    href: '#',
+    read: true,
     date: '1d ago',
     datetime: '2021-01-27T16:35',
     preview:
@@ -61,7 +61,7 @@ const messages = [
     subject:
       'Est ratione molestiae modi maiores consequatur eligendi et excepturi magni',
     sender: 'Dolores Morissette',
-    href: '#',
+    read: true,
     date: '1d ago',
     datetime: '2021-01-27T16:35',
     preview:
@@ -71,7 +71,7 @@ const messages = [
     id: 7,
     subject: 'Commodi deserunt aut veniam rem ipsam',
     sender: 'Guadalupe Walsh',
-    href: '#',
+    read: true,
     date: '1d ago',
     datetime: '2021-01-27T16:35',
     preview:
@@ -81,7 +81,7 @@ const messages = [
     id: 8,
     subject: 'Illo illum aut debitis earum',
     sender: 'Jasmine Hansen',
-    href: '#',
+    read: false,
     date: '1d ago',
     datetime: '2021-01-27T16:35',
     preview:
@@ -91,7 +91,7 @@ const messages = [
     id: 9,
     subject: 'Qui dolore iste ut est cumque sed',
     sender: 'Ian Volkman',
-    href: '#',
+    read: true,
     date: '1d ago',
     datetime: '2021-01-27T16:35',
     preview:
@@ -101,7 +101,7 @@ const messages = [
     id: 10,
     subject: 'Aut sed aut illum delectus maiores laboriosam ex',
     sender: 'Rafael Klocko',
-    href: '#',
+    read: false,
     date: '1d ago',
     datetime: '2021-01-27T16:35',
     preview:
