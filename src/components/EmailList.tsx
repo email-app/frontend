@@ -1,5 +1,7 @@
 import React from 'react';
 
+import EmailListItem from './EmailListItem';
+
 const messages = [
   {
     id: 1,
@@ -110,34 +112,8 @@ const EmailList: React.FC = () => (
   <nav aria-label="Message list" className="flex-1 min-h-0 overflow-y-auto">
     <ul className="border-b border-gray-200 divide-y divide-gray-200">
       {messages.map((message) => (
-        <li
-          key={message.id}
-          className="hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 relative px-6 py-5 bg-white"
-        >
-          <div className="flex justify-between space-x-3">
-            <div className="flex-1 min-w-0">
-              <a href={message.href} className="focus:outline-none block">
-                <span className="absolute inset-0" aria-hidden="true" />
-                <p className="text-sm font-medium text-gray-900 truncate">
-                  {message.sender}
-                </p>
-                <p className="text-sm text-gray-500 truncate">
-                  {message.subject}
-                </p>
-              </a>
-            </div>
-            <time
-              dateTime={message.datetime}
-              className="whitespace-nowrap flex-shrink-0 text-sm text-gray-500"
-            >
-              {message.date}
-            </time>
-          </div>
-          <div className="mt-1">
-            <p className="line-clamp-2 text-sm text-gray-600">
-              {message.preview}
-            </p>
-          </div>
+        <li key={message.id}>
+          <EmailListItem email={message} />
         </li>
       ))}
     </ul>
