@@ -111,11 +111,13 @@ const messages = [
 const EmailList: React.FC = () => (
   <nav aria-label="Message list" className="flex-1 min-h-0 overflow-y-auto">
     <ul className="border-b border-gray-200 divide-y divide-gray-200">
-      {messages.map((message) => (
-        <li key={message.id}>
-          <EmailListItem email={message} />
-        </li>
-      ))}
+      {messages
+        .map((m) => ({ ...m, href: `/emails/${m.id}` }))
+        .map((message) => (
+          <li key={message.id}>
+            <EmailListItem email={message} />
+          </li>
+        ))}
     </ul>
   </nav>
 );
