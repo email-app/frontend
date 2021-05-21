@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router';
 
 import EmailListItem from './EmailListItem';
 
@@ -108,17 +109,24 @@ const messages = [
   },
 ];
 
-const EmailList: React.FC = () => (
-  <nav aria-label="Message list" className="flex-1 min-h-0 overflow-y-auto">
-    <ul className="border-b border-gray-200 divide-y divide-gray-200">
-      {messages
-        .map((m) => ({ ...m, href: `/emails/${m.id}` }))
-        .map((message) => (
-          <li key={message.id}>
-            <EmailListItem email={message} />
-          </li>
-        ))}
-    </ul>
-  </nav>
-);
+const EmailList: React.FC = () => {
+  const { pathname } = useLocation();
+
+  return (
+    <nav aria-label="Message list" className="flex-1 min-h-0 overflow-y-auto">
+      <ul className="border-b border-gray-200 divide-y divide-gray-200">
+        {messages
+          .map((m) => ({ ...m, href: `/emails/${m.id}` }))
+          .map((message) => (
+            <li key={message.id}>
+              <EmailListItem
+                email={message}
+                active={message.href === pathname}
+              />
+            </li>
+          ))}
+      </ul>
+    </nav>
+  );
+};
 export default EmailList;
