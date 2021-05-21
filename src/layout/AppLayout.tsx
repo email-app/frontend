@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import EmailList from 'src/components/EmailList';
 import MobileHeader from 'src/components/MobileHeader';
 import Navbar from 'src/components/Navbar';
 import Slideover from 'src/components/Slideover';
@@ -28,12 +27,7 @@ const AppLayout: React.FC = ({ children }) => {
         </div>
 
         <div className="relative z-0 flex flex-1 overflow-hidden">
-          <main className="focus:outline-none xl:order-last relative z-0 flex-1 overflow-y-auto">
-            {children}
-          </main>
-          <aside className="xl:order-first xl:flex xl:flex-col w-96 relative flex-shrink-0 hidden border-r border-gray-200">
-            <EmailList />
-          </aside>
+          {children}
         </div>
       </div>
     </div>
