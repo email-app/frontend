@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import classNames from 'src/util/classNames';
 
-interface EmailListItemProps {
+export interface EmailListItemProps {
   email: {
     subject: string;
     sender: string;
