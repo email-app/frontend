@@ -1,5 +1,5 @@
 import React from 'react';
-import useSanitize from '../hooks/useSanitize';
+import useSanitize from 'src/hooks/useSanitize';
 
 const email = `
 <div>

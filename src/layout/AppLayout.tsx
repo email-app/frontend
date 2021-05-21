@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-import EmailList from '../components/EmailList';
-import MobileHeader from '../components/MobileHeader';
-import Navbar from '../components/Navbar';
-import Slideover from '../components/Slideover';
+import EmailList from 'src/components/EmailList';
+import MobileHeader from 'src/components/MobileHeader';
+import Navbar from 'src/components/Navbar';
+import Slideover from 'src/components/Slideover';
 
 const AppLayout: React.FC = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);

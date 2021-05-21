@@ -8,7 +8,7 @@ import {
   UserGroupIcon,
 } from '@heroicons/react/outline';
 
-import classNames from '../util/classNames';
+import classNames from 'src/util/classNames';
 
 const navigation = [
   { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
