@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   CloudUploadIcon,
   FilterIcon,
@@ -33,9 +34,9 @@ const Navbar: React.FC = () => {
         <nav className="flex-1 mt-5" aria-label="Sidebar">
           <div className="px-2 space-y-1">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className={classNames(
                   item.current
                     ? 'bg-gray-200 text-gray-900'
@@ -53,7 +54,7 @@ const Navbar: React.FC = () => {
                   aria-hidden="true"
                 />
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </nav>
