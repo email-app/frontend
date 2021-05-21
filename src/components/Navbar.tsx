@@ -1,22 +1,22 @@
 import React from 'react';
 import {
-  CalendarIcon,
-  HomeIcon,
-  MapIcon,
-  SearchCircleIcon,
-  SpeakerphoneIcon,
-  UserGroupIcon,
+  CloudUploadIcon,
+  FilterIcon,
+  FlagIcon,
+  InboxIcon,
+  TrashIcon,
+  UsersIcon,
 } from '@heroicons/react/outline';
 
 import classNames from 'src/util/classNames';
 
 const navigation = [
-  { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-  { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
-  { name: 'Teams', href: '#', icon: UserGroupIcon, current: false },
-  { name: 'Directory', href: '#', icon: SearchCircleIcon, current: false },
-  { name: 'Announcements', href: '#', icon: SpeakerphoneIcon, current: false },
-  { name: 'Office Map', href: '#', icon: MapIcon, current: false },
+  { name: 'Inbox', href: '/emails', icon: InboxIcon, current: true },
+  { name: 'Accounts', href: '/accounts', icon: UsersIcon, current: false },
+  { name: 'Spam', href: '/spam', icon: FlagIcon, current: false },
+  { name: 'Sent', href: '/sent', icon: CloudUploadIcon, current: false },
+  { name: 'Filters', href: '/filters', icon: FilterIcon, current: false },
+  { name: 'Trash', href: '/trash', icon: TrashIcon, current: false },
 ];
 
 const Navbar: React.FC = () => {
