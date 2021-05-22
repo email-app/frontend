@@ -4,10 +4,12 @@
     "build": "snowpack build",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "generate": "graphql-codegen --config codegen.yml"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
+    "@graphql-codegen/cli": "1.21.4",
     "@snowpack/plugin-postcss": "^1.2.2",
     "@snowpack/plugin-react-refresh": "^2.5.0",
     "@storybook/addon-actions": "^6.2.9",
@@ -29,7 +31,10 @@
     "prettier-plugin-tailwind-css": "^1.5.0",
     "snowpack": "^3.0.1",
     "snowpack-plugin-raw-file-loader": "^1.0.9",
-    "tsconfig-paths-webpack-plugin": "^3.5.1"
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "@graphql-codegen/typescript-operations": "1.17.16",
+    "@graphql-codegen/typescript-react-apollo": "2.2.4",
+    "@graphql-codegen/typescript": "1.22.0"
   },
   "dependencies": {
     "@apollo/client": "^3.3.19",
