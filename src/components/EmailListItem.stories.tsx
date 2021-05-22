@@ -12,11 +12,10 @@ export default {
 
 const email: EmailListItemProps['email'] = {
   subject: 'Commodi deserunt aut veniam rem ipsam',
-  sender: 'Guadalupe Walsh',
+  sentBy: { name: 'Guadalupe Walsh' },
   read: false,
   href: '/emails/7',
-  date: '1d ago',
-  datetime: '2021-01-27T16:35',
+  receivedAt: new Date(Date.now() - 1000 * 60 * 60 * 4).toJSON(), // 4h ago
   preview:
     'Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.',
 };
