@@ -1,6 +1,6 @@
 import React from 'react';
-import EmailList from 'src/components/EmailList';
-import emails from 'src/data/emails';
 
-const EmailListPage: React.FC = () => <EmailList emails={emails} />;
+import EmailListController from 'src/components/controllers/EmailListController';
+
+const EmailListPage: React.FC = () => <EmailListController />;
 export default EmailListPage;
