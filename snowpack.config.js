@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     '@snowpack/plugin-postcss',
     '@snowpack/plugin-react-refresh',
+    '@snowpack/plugin-dotenv',
     'snowpack-plugin-raw-file-loader',
   ],
   routes: [
