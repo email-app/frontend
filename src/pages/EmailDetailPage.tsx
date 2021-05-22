@@ -2,6 +2,7 @@ import React from 'react';
 import EmailList from 'src/components/EmailList';
 
 import EmailView from 'src/components/EmailView';
+import emails from 'src/data/emails';
 import MainAsideLayout from 'src/layout/MainAsideLayout';
 
 const EmailDetailPage: React.FC = () => (
@@ -12,7 +13,7 @@ const EmailDetailPage: React.FC = () => (
       </div>
     </MainAsideLayout.Main>
     <MainAsideLayout.Aside>
-      <EmailList />
+      <EmailList emails={emails} />
     </MainAsideLayout.Aside>
   </MainAsideLayout>
 );
