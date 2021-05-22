@@ -5,7 +5,7 @@
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "generate": "graphql-codegen --config codegen.yml"
+    "generate": "graphql-codegen --config codegen.yml -r dotenv/config"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
