@@ -23,13 +23,9 @@ const EmailListController: React.FC = () => {
   const { data, loading, error } = useEmailListQuery();
 
   const emails = data?.emails.map((e) => ({
-    id: e.id,
-    subject: e.subject,
-    sender: e.sentBy.name,
+    ...e,
     href: `/emails/${e.id}`,
     read: true,
-    date: '1d ago',
-    datetime: e.receivedAt.toString(),
     preview:
       'Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.',
   }));

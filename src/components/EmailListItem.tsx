@@ -5,11 +5,13 @@ import classNames from 'src/util/classNames';
 export interface EmailListItemProps {
   email: {
     subject: string;
-    sender: string;
+    sentBy: {
+      name: string;
+    };
+    receivedAt: string;
+
     href: string;
     read: boolean;
-    date: string;
-    datetime: string;
     preview: string;
   };
 
@@ -37,16 +39,17 @@ const EmailListItem: React.FC<EmailListItemProps> = ({
               active && 'text-blue-700'
             )}
           >
-            {email.sender}
+            {email.sentBy.name}
           </p>
           <p className="text-sm text-gray-500 truncate">{email.subject}</p>
         </Link>
       </div>
       <time
-        dateTime={email.datetime}
+        dateTime={email.receivedAt}
         className="whitespace-nowrap flex-shrink-0 text-sm text-gray-500"
       >
-        {email.date}
+        {/* TODO Generate this */}
+        1d ago
       </time>
     </div>
     <div className="mt-1">
