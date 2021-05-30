@@ -11,6 +11,12 @@ module.exports = {
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     'snowpack-plugin-raw-file-loader',
+    [
+      'snowpack-plugin-raw-file-loader',
+      {
+        exts: ['.graphql'],
+      },
+    ],
   ],
   routes: [
     /* Enable an SPA Fallback in development: */

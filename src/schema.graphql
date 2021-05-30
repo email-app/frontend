@@ -1,0 +1,24 @@
+type Email {
+  id: ID!
+
+  subject: String!
+  content: String!
+
+  receivedAt: String! # TODO Make custom scalar
+  read: boolean!
+
+  sentBy: Contact!
+}
+
+type Contact {
+  id: ID!
+
+  name: String!
+
+  emailAdress: String!
+  emails: [Email!]!
+}
+
+type Query {
+  emails: [Email!]!
+}
