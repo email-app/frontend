@@ -11,6 +11,7 @@ const EMAIL_LIST_QUERY = gql`
       id
       subject
       receivedAt
+      read
       sentBy {
         id
         name
@@ -25,7 +26,6 @@ const EmailListController: React.FC = () => {
   const emails = data?.emails.map((e) => ({
     ...e,
     href: `/emails/${e.id}`,
-    read: true,
     preview:
       'Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.',
   }));
