@@ -35,5 +35,5 @@ module.exports = {
   buildOptions: {
     /* ... */
   },
-  exclude: ['**/.git/**/*'],
+  exclude: ['**/.git/**/*', '**/_redirects'],
 };
