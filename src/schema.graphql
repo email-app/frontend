@@ -5,7 +5,7 @@ type Email {
   content: String!
 
   receivedAt: String! # TODO Make custom scalar
-  read: boolean!
+  read: Boolean!
 
   sentBy: Contact!
 }
