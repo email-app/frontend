@@ -58,3 +58,8 @@ declare module '*.txt' {
   const ref: string;
   export default ref;
 }
+
+declare module '*.graphql' {
+  const ref: string;
+  export default ref;
+}

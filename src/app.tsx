@@ -4,7 +4,12 @@ import { ApolloProvider } from '@apollo/client';
 
 import Routes from './Routes';
 import AppLayout from './layout/AppLayout';
-import client from './graphql/client';
+import { createClient } from './graphql/client';
+import { startServer } from './mirage';
+
+startServer();
+
+const client = createClient();
 
 const App: React.FC = () => (
   <ApolloProvider client={client}>
