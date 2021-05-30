@@ -1,5 +1,5 @@
 overwrite: true
-schema: "${SNOWPACK_PUBLIC_GRAPHQL_URL}"
+schema: "src/schema.graphql"
 documents: "src/**/*.tsx"
 generates:
   src/generated/graphql.tsx:
