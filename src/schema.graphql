@@ -21,4 +21,5 @@ type Contact {
 
 type Query {
   emails: [Email!]!
+  email(id: ID!): Email
 }

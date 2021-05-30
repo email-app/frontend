@@ -5,7 +5,7 @@ import { useEmailViewQuery } from 'src/generated/graphql';
 import EmailView from '../EmailView';
 
 const EMAIL_VIEW_QUERY = gql`
-  query EmailView($id: String!) {
+  query EmailView($id: ID!) {
     email(id: $id) {
       id
       content
