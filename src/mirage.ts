@@ -26,6 +26,7 @@ export const startServer = () =>
       Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut`,
         read: false,
         sentBy: michael,
+        receivedAt: '2021-05-17T20:11:56.088Z',
       } as any);
 
       server.create('Email', {
@@ -35,6 +36,7 @@ export const startServer = () =>
       Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut`,
         read: true,
         sentBy: michael,
+        receivedAt: '2021-05-17T21:19:56.087Z',
       } as any);
 
       server.create('Email', {
@@ -44,6 +46,7 @@ export const startServer = () =>
       Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut`,
         read: false,
         sentBy: michael,
+        receivedAt: '2021-04-17T21:19:56.087Z',
       } as any);
 
       server.create('Email', {
@@ -56,6 +59,7 @@ export const startServer = () =>
       `,
         read: false,
         sentBy: jenny,
+        receivedAt: '2021-05-19T21:19:56.087Z',
       } as any);
     },
   });
