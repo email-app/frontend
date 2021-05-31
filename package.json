@@ -5,7 +5,8 @@
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "generate": "graphql-codegen --config codegen.yml -r dotenv/config"
+    "generate": "graphql-codegen --config codegen.yml -r dotenv/config",
+    "e2e": "cypress open"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -30,6 +31,7 @@
     "@types/react-router-dom": "^5.1.7",
     "autoprefixer": "^10.2.5",
     "babel-loader": "^8.2.2",
+    "cypress": "^7.4.0",
     "miragejs": "^0.1.41",
     "postcss": "^8.2.15",
     "postcss-cli": "^8.3.1",
